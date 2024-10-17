@@ -7,4 +7,9 @@ Inserire un bottone che al click fetchi altre 10 mail (sostituendo le altre)*/
 let emailListEl = document.getElementById("emailList");
 let buttonEl = document.getElementById("generateBtn");
 
-buttonEl
+buttonEl.addEventListener("click" , function(){
+    for (let i = 0; i < 10; i++) {
+        emailListEl.innerHTML += `<li class="col-5 d-flex justify-content-center">fpm.asd@gmail.com</li>`
+        
+    }
+})
